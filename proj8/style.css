@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* general */
+html,body{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 300;
+}
+body{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* naviagtion */
+nav{ 
+    width: 70%;
+    height: 100vh;
+    border-right: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+nav h2{
+    font-weight: 300;
+    padding: 11px;
+    line-height: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+nav li:hover{
+    transition: 0.2s ease-in;
+    background: #ccc;
+}
+/* content */
+.content{
+    padding: 0px 60px 60px;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    text-align: justify;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.content section{
+    padding-top: 50px;
+}
+.content h3{
+    border-bottom: 1px solid #ccc;
+    font-size: 1.3rem;
+}
+.content p{
+    margin-top: 20px;
+    padding: 0px 10px;
+}
+.content ul{
+    margin-top: 20px;
+    padding: 0px 30px;
+}
+/* hello section */
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+@media (max-width:480px){
+    body{
+        flex-direction: column;
+    }
+    nav{
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 200px;
+        width: 100%;
+    }
+}
